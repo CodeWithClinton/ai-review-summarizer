@@ -123,3 +123,7 @@ def product_detail(request, slug):
 
 
 
+@api_view(['GET'])
+def ask_how_are_you(request):
+    return Response({"message": "How are you today?"})
+
