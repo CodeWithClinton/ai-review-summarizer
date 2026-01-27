@@ -264,3 +264,8 @@ POST /api/products/wireless-headphones/generate-summary/
 * The result is stored and reused until the 7-day cooldown expires
 
 ---
+
+
+
+
+

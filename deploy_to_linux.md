@@ -21,33 +21,34 @@ When selecting the authentication method, **choose SSH Key** instead of password
 Open your terminal and run:
 
 ```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "linux-vps-deployment-i" -f linux_vps_deployment_i
 ```
 
 When prompted:
 
-* Press **Enter** to accept the default file location
-* Press **Enter** again if you don’t want to set a passphrase (optional but recommended)
+* Press **Enter** to accept the key generation
+* Press **Enter** again if you don’t want to set a passphrase
+  *(You can add one for extra security if you like)*
 
 Once done:
 
-* A `.ssh` folder will be created in your home directory
-* Inside it, you’ll find:
+* Two files will be created in your current directory:
 
-  * `id_ed25519` → your **private key** (keep this safe!)
-  * `id_ed25519.pub` → your **public key**
+  * `linux_vps_deployment_i` → your **private key** (keep this safe!)
+  * `linux_vps_deployment_i.pub` → your **public key**
 
 ### View Your Public Key
 
 Run:
 
 ```bash
-cat ~/.ssh/id_ed25519.pub
+cat linux_vps_deployment_i.pub
 ```
 
-Copy the output and paste it into the **SSH key** field when creating your droplet on DigitalOcean.
+Copy the output and paste it into the **SSH key** field when creating your Droplet on **DigitalOcean**.
 
 ---
+
 
 ## 3. Log Into Your Server as Root
 
@@ -1070,6 +1071,14 @@ Next, we’ll:
 ➡️ Set up automatic renewals
 ➡️ Harden security
 ➡️ Turn off DEBUG
+
+
+
+
+
+
+
+
 
 
 
