@@ -127,3 +127,8 @@ def product_detail(request, slug):
 def ask_how_are_you(request):
     return Response({"message": "How are you today?"})
 
+
+
+@api_view(['GET'])
+def who_are_you(request):
+    return Response({"message": "I am an AI assistant."})
