@@ -1,8 +1,5 @@
 
 
-
-
-````md
 # 🚀 Automating Django REST API Deployment with CI/CD on a DigitalOcean Droplet
 
 This guide explains how to automate deployment of a **Django REST API** running on a **DigitalOcean Droplet** using **GitHub Actions (CI/CD)**.
