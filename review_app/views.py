@@ -15,10 +15,10 @@ from review_app.models import Product
 
 # The following is a dummy API key for tutorial purposes only.
 # Replace with your actual OpenAI API key.
-client = openai = OpenAI(api_key="sk-test-1234567890abcdefTESTKEYnotreal9876543210")
+# client = openai = OpenAI(api_key="sk-test-1234567890abcdefTESTKEYnotreal9876543210")
 
 # When you get your real API key, place the key in a .env file, access it in your settings.py, and use the line below instead:
-# client = OpenAI(api_key=settings.OPENAI_API_KEY)
+client = OpenAI(api_key=settings.OPENAI_API_KEY)
 
 
 def summarize_reviews(product_name, reviews):
